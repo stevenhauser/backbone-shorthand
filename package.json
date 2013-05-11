@@ -1,0 +1,17 @@
+{
+  "name": "backbone.shorthand",
+  "version": "0.0.0",
+  "description": "Provides shorthand methods for model attributes",
+  "main": "src/backbone.shorthand.js",
+  "repository": "",
+  "keywords": [
+    "backbone",
+    "model",
+    "shorthand"
+  ],
+  "author": "Steven Hauser",
+  "license": "MIT",
+  "dependencies": {
+    "backbone": "~1.0.0"
+  }
+}
