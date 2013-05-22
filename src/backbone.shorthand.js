@@ -29,7 +29,7 @@
   };
 
   if (typeof exports != "undefined") {
-    exports.shorthandify = Backbone.Model.shorthandify
+    exports.shorthandify = Backbone.Model.shorthandify;
   }
 
 }());
