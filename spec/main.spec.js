@@ -1,7 +1,3 @@
-var Backbone = require("backbone"),
-    shorthand = require("./../src/backbone.shorthand.js");
-
-
 describe("backbone.shorthand", function() {
 
 

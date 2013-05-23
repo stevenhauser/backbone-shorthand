@@ -12,8 +12,16 @@ module.exports = function(grunt) {
     },
 
     jasmine: {
-      src: "src/**/*.js",
-      specs: "spec/*.js"
+      main: {
+        src: "src/*.js",
+        options: {
+          specs: "spec/*.js",
+          vendor: [
+            "node_modules/backbone/node_modules/underscore/underscore.js",
+            "node_modules/backbone/backbone.js"
+          ]
+        }
+      }
     },
 
     watch: {
@@ -29,7 +37,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-watch");
 
 
-  grunt.registerTask("spec", ["jshint", "jasmine"]);
-  grunt.registerTask("default", ["jshint", "jasmine", "watch"]);
+  grunt.registerTask("spec", ["jshint", "jasmine:main"]);
+  grunt.registerTask("default", ["jshint", "jasmine:main", "watch"]);
 
 };
