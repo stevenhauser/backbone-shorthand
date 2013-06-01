@@ -1,9 +1,9 @@
 {
   "name": "backbone.shorthand",
-  "version": "0.0.0",
-  "description": "Provides shorthand methods for model attributes",
+  "version": "0.0.1",
+  "description": "Provides shorthand methods for Backbone model attributes",
   "main": "src/backbone.shorthand.js",
-  "repository": "",
+  "repository": "https://github.com/stevenhauser/backbone-shorthand",
   "keywords": [
     "backbone",
     "model",
