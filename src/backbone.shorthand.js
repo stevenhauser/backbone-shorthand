@@ -21,6 +21,7 @@
 
   Backbone.Model.shorthandify = function(attrs) {
     attrs = attrs || this.prototype[shorthandKey];
+    if (!attrs) { return this; }
     if (typeof attrs == "string") { attrs = [attrs]; }
     for (var i = 0, l = attrs.length; i < l; i++) {
       createShorthandMethod(this, attrs[i]);
